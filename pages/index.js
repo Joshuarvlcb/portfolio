@@ -38,10 +38,12 @@ export default function Home() {
       <Head>
         <title>Joshuarvlcb</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
           rel="stylesheet"
         />
+        
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           rel="stylesheet"
