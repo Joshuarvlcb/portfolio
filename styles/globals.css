@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+header {
+  min-height: 100vh;
+  width: auto;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.phone {
+  font-size: 34px;
+  margin-right: 20px;
+}

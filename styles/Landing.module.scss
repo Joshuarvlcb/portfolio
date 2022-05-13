@@ -1,0 +1,432 @@
+.gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to top left, #9d29a8a4 0%, #751f6ebe 100%);
+}
+.vid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: fill;
+  object-fit: fill;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -3;
+}
+
+.logo {
+  height: 85px;
+}
+.logo:hover {
+  transform: scale(1.2);
+  transition: all 0.4s;
+}
+.content-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-text {
+  margin-bottom: 40px;
+  line-height: 80px;
+}
+.name {
+  display: block;
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 15px;
+  width: 1000px;
+}
+
+.title {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 18px;
+  color: #ffffff;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.3rem 2.6rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  outline: none;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  outline: none;
+}
+.project-btn {
+  background-color: white;
+  color: rgb(0, 102, 255);
+
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+@media only screen and (max-width: 995px) {
+  .skills-container {
+    margin-top: -230px;
+    .skills-title {
+      margin-top: 23vh;
+    }
+  }
+  .con {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cube-con {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+  }
+  .cubeface {
+    width: 200px;
+    height: 200px;
+  }
+  .cube__faces {
+    width: 200px;
+    height: 200px !important;
+  }
+  .cubefront {
+    transform: translateZ(150px);
+    background-color: rgb(117, 93, 139);
+  }
+  .cubeback {
+    transform: translateZ(-50px) rotateY(180deg);
+    background-color: rgb(95, 76, 110);
+  }
+  .cuberight {
+    transform: rotateY(-270deg) translateX(50px);
+    transform-origin: top right;
+    background-color: #46384b;
+  }
+  .cubetop {
+    transform: rotateX(-90deg) translateY(-150px);
+    transform-origin: top center;
+    background-color: #604e68;
+  }
+  .cubebottom {
+    transform: rotateX(90deg) translateY(150px);
+    transform-origin: bottom center;
+    background-color: #6a546e;
+  }
+  .cubeleft {
+    transform: rotateY(270deg) translateX(-50px);
+    transform-origin: center left;
+    background-color: #8a618a;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .name {
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 15px;
+    width: 800px;
+    padding: 0 30px;
+  }
+  .title {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 18px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .name {
+    display: block;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 15px;
+    width: 600px;
+  }
+  .title {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #ffffff;
+  }
+  .logo-container {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .name {
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 500px;
+  }
+  .title {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ffffff;
+  }
+
+  .about-page {
+    .icons {
+      width: 100%;
+      img {
+        width: 100px;
+      }
+    }
+    .about-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: rgb(148, 20, 120);
+        font-size: 40px;
+      }
+    }
+    .con {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .content-about {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        padding: 0 30px;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        text-align: center;
+      }
+      h5 {
+        text-align: center;
+        width: 100%;
+        color: #b132b1;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .node {
+    width: 50%;
+  }
+
+  .name {
+    display: block;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 400px;
+  }
+  .title {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ffffff;
+    width: 400px;
+  }
+  .heading-text {
+    margin-bottom: 40px;
+    line-height: 60px;
+  }
+  .logo {
+    height: 60px;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .name {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 350px;
+    margin: 0px;
+  }
+  .title {
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #ffffff;
+    width: 350px;
+  }
+  .heading-text {
+    margin-bottom: 40px;
+    line-height: 60px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+}
+.col {
+  padding: 0px;
+}
+
+.progress {
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 405px) {
+  .vid {
+    display: none;
+  }
+  .gradient {
+    background-image: linear-gradient(to top left, #9d29a8a4 0%, #751f6ebe 100%);
+        background-size: cover;
+    background-position: center;
+  }
+  .name {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 5px;
+    margin-right: 0px;
+  }
+  .title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffffff;
+  }
+  .heading-text {
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .name {
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 5px;
+    width: 280px;
+    margin: 0;
+  }
+  .title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffffff;
+    width: 280px;
+  }
+  .heading-text {
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.9rem 1.3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .about-page {
+    .icons {
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
