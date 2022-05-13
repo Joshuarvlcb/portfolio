@@ -38,6 +38,7 @@ export default function Home() {
       <Head>
         <title>Joshuarvlcb</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="shortcut icon" href="../public/favicon.ico" />
 
         <link
           href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
