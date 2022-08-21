@@ -10,7 +10,7 @@ const Contact = () => {
   const message = useRef();
   return (
     <>
-      <div className={styles["contact"]}>
+      {/* <div className={styles["contact"]}>
         <h1 id="contact" className={styles["contact__title"]}>
           Contact Me
         </h1>
@@ -133,10 +133,9 @@ const Contact = () => {
             >
               submit
             </button>
-          </div>
-          <Footer />
-        </div>
-      </div>
+          </div> */}
+        {/* </div> */}
+      {/* // </div> */}
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/About.module.scss";
 import Cube from "./Floater";
+import Footer from './Footer'
 const Aboutme = ({ aboutPageRef }) => {
   return (
     <>
@@ -39,6 +40,8 @@ const Aboutme = ({ aboutPageRef }) => {
             <Cube />
           </div>
         </div>
+        <Footer />
+
       </div>
     </>
   );

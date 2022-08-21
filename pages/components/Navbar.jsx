@@ -25,7 +25,7 @@ const Navbar = ({ navbarRef }) => {
           } else {
             console.log("foo");
             navMenu.style.left = -100 + "%";
-            setAClicked(false);
+            setToggleNavbar(false);
           }
         }}
         className={styles.ham}

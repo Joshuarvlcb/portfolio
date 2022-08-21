@@ -15,11 +15,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-size: .8rem;
   transition: all 0.9s ease;
   position: absolute;
-  height: 440px;
+  height: 470px;
   top: 0;
   left: 0;
   backface-visibility: hidden;
@@ -63,31 +63,37 @@
   text-align: center;
 }
 
-.heading-text h3.mastermind {
-  color: rgb(19, 141, 182);
+.heading-text {
+  h3{
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  margin-top: 1rem;
+  padding: 0 1rem;
+  text-align: center;
 }
-.quiz-text {
-  color: rgb(255, 100, 185) !important;
-}
-.heading-text h3.todo {
-  color: rgb(145, 28, 110);
-}
-//
-.tools-container.mastermind-color {
-  background-color: rgb(19, 141, 182);
-}
-.tools-container.todo-color {
-  background-color: rgb(130, 19, 182);
-}
-.tools-container.calc-color {
-  background-color: gray;
-}
-.calc-text {
-  color: gray;
-}
+// .quiz-text {
+//   color: rgb(255, 100, 185) !important;
+// }
+// .heading-text h3.todo {
+//   color: rgb(145, 28, 110);
+// }
+// //
+// .tools-container.mastermind-color {
+//   background-color: rgb(19, 141, 182);
+// }
+// .tools-container.todo-color {
+//   background-color: rgb(130, 19, 182);
+// }
+// .tools-container.calc-color {
+//   background-color: gray;
+// }
+// .calc-text {
+//   color: gray;
+// }
 .card {
   position: relative;
-  height: 440px;
+  height: 470px;
   width: 290px;
   background-color: rgb(231, 231, 231);
   border-radius: 5px;
@@ -97,36 +103,39 @@
 .card:last-child {
   margin-bottom: 5rem;
 }
-
+.front-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .card-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 150px;
+
+  height: 200px;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: cover;
-  background-position: center;
+  img{
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .card-header.tic {
   background-size: cover;
 }
-.heading-text h3 {
-  margin-top: 90px;
-  font-weight: 800;
-  color: rgb(255, 118, 141);
-  display: block;
-  text-align: center;
-}
-.heading-text h4 {
-  margin: 10px 0px;
-  font-size: 15px;
-  font-family: serif;
-  color: grey;
-  text-align: center;
-  padding: 0 10px;
-}
+// .heading-text h3 {
+//   margin-top: 90px;
+//   font-weight: 800;
+//   color: rgb(255, 118, 141);
+//   display: block;
+//   text-align: center;
+// }
+// .heading-text h4 {
+//   margin: 10px 0px;
+//   font-size: 15px;
+//   font-family: serif;
+//   color: grey;
+//   text-align: center;
+//   padding: 0 10px;
+// }
 
 .tools-container {
   position: absolute;
@@ -145,7 +154,7 @@
 }
 .back-card {
   transform: rotateY(180deg);
-  height: 440px;
+  height: 470px;
   min-width: 290px;
   background-color: rgb(26, 23, 23);
   display: flex;
