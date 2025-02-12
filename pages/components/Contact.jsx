@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Footer from "./Footer";
 import styles from "../../styles/Contact.module.scss";
-import axios from "axios";
 
 const Contact = () => {
   const firstName = useRef();
@@ -123,14 +122,6 @@ const Contact = () => {
                 email.current.value = "";
                 phone.current.value = "";
                 message.current.value = "";
-                const result = await axios.post(
-                  "https://joshuarvlcb.com/api/sendEmail",
-                  formData,
-                  {
-                    headers: { "Content-Type": "multipart/form-data" },
-                  }
-                );
-                console.log(result);
               }}
             >
               submit
