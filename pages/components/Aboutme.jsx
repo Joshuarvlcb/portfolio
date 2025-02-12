@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../styles/About.module.scss";
 import Cube from "./Floater";
-import Footer from './Footer'
+import Footer from "./Footer";
 const Aboutme = ({ aboutPageRef }) => {
   return (
     <>
@@ -15,23 +15,21 @@ const Aboutme = ({ aboutPageRef }) => {
               <h5>Motivated to produce results</h5>
 
               <p>
-                I am a resilient full stack developer ready to provide value
-                with my skillset of frameworks and problem solving cababilities.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt ducimus voluptate, odio ipsam nobis reprehenderit fugit
-                itaque nam! Perspiciatis, nisi!
+                I am a resilient full-stack developer, ready to deliver value
+                through my expertise in frameworks and problem-solving
+                capabilities. I am committed to tackling complex challenges and
+                contributing to impactful projects with my technical skills and
+                adaptability.
               </p>
             </div>
             <div className={styles["content-about"]}>
               <h5>An agile collaborator</h5>
 
               <p>
-                I worked on a project with a team using agile principles to
-                deliver the best software, and always stay attuned to the newest
-                frameworks. Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Eligendi enim repudiandae non quibusdam suscipit iusto eum
-                dolore corrupti dolor id rerum quod, iure nulla quo esse ex
-                voluptas, doloremque amet.
+                I am an agile collaborator, adept at working within fast-paced,
+                cross-functional teams. I thrive in environments that emphasize
+                flexibility and continuous improvement, and I am dedicated to
+                delivering results through effective communication and teamwork.
               </p>
             </div>
           </div>
@@ -41,7 +39,6 @@ const Aboutme = ({ aboutPageRef }) => {
           </div>
         </div>
         <Footer />
-
       </div>
     </>
   );

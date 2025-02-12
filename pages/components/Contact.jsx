@@ -1,16 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import Footer from "./Footer";
 import styles from "../../styles/Contact.module.scss";
 import axios from "axios";
+
 const Contact = () => {
   const firstName = useRef();
   const lastName = useRef();
   const email = useRef();
   const phone = useRef();
   const message = useRef();
+
   return (
     <>
-      {/* <div className={styles["contact"]}>
+      <div className={styles["contact"]}>
         <h1 id="contact" className={styles["contact__title"]}>
           Contact Me
         </h1>
@@ -38,7 +40,7 @@ const Contact = () => {
                   name="mail-outline"
                   className={styles["email"]}
                 ></ion-icon>
-                <li>joshuarvlcb@gmail.com</li>
+                <li>joshjavascript@gmail.com</li>
               </div>
               <div className={styles["contact-con__info__info__list"]}>
                 <ion-icon
@@ -133,9 +135,10 @@ const Contact = () => {
             >
               submit
             </button>
-          </div> */}
-        {/* </div> */}
-      {/* // </div> */}
+          </div>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };

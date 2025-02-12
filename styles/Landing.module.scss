@@ -39,10 +39,11 @@
 .name {
   display: block;
   font-size: 70px;
-  font-weight: 500;
+  font-weight: 700;
   color: white;
   letter-spacing: 15px;
   width: 1000px;
+  font-family: 'Orbitron', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .title {
@@ -51,6 +52,7 @@
   font-weight: 600;
   letter-spacing: 18px;
   color: #ffffff;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .btn:link,
@@ -59,15 +61,14 @@
   text-decoration: none;
   padding: 1.3rem 2.6rem;
   display: inline-block;
-  border-radius: 10rem;
+  border-radius: 1rem;
   transition: all 0.2s;
   outline: none;
 }
 .btn:hover {
+  background: white;
   transform: translateY(-3px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  color: rgb(0, 0, 0);
-  outline: none;
 }
 .btn:active {
   transform: translateY(-1px);
@@ -75,12 +76,38 @@
   outline: none;
 }
 .project-btn {
-  background-color: white;
+  background: white;
   color: rgb(0, 102, 255);
-
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  span {
+    background: linear-gradient(
+      90deg,
+      #0066ff,    // Blue
+      #0099ff,    // Light blue
+      #00ccff,    // Sky blue
+      #0099ff,    // Light blue
+      #0066ff     // Back to blue
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 100%;
+    animation: textShimmer 8s linear infinite;
+    letter-spacing: 0.5px;
+  }
+}
+
+@keyframes textShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
 }
 @media only screen and (max-width: 995px) {
   .skills-container {
@@ -430,3 +457,18 @@
     }
   }
 }
+
+.diagonalBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; // Adjust height as needed
+  background: white; // Or whatever color your next section is
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  // Or for reverse diagonal:
+  // clip-path: polygon(0 100%, 100% 100%, 0 0);
+}
+
+
+
